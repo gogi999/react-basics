@@ -1,4 +1,6 @@
-import Expenses from './components/Expenses';
+import React from 'react';
+
+import Expenses from './components/Expenses/Expenses';
 
 function App() {
   const expenses = [
@@ -21,8 +23,15 @@ function App() {
       amount: 450,
       date: new Date(2021, 5, 12),
     },
-  ]
-
+  ];
+  /*
+  return React.createElement(
+    'div',
+    {},
+    React.createElement('h2', {}, "Expense Tracker"),
+    React.createElement(Expenses, { expenses })
+  );
+  */
   return (
     <div>
       <h1 className="header">Expense Tracker</h1>
